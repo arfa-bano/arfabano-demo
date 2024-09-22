@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Music Player</title>
+  <link rel="stylesheet" href="music.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <h1>Spotify Inspired Player</h1>
+      <input type="search" placeholder="Search music...">
+    </header>
+
+    <!-- Main content: Music Library and Playlist -->
+    <main>
+      <!-- Music Library -->
+      <section class="music-library">
+        <h2>Music Library</h2>
+        <div class="track-list">
+          <div class="track" data-src="song1.mp3">
+            <img src="https://via.placeholder.com/150" alt="Album Cover">
+            <p class="track-title">Tum Hi Ho</p>
+            <p class="artist-name">Arijit Singh, Shreya Ghoshal</p>
+          </div>
+          <div class="track" data-src="song2.mp3">
+            <img src="https://via.placeholder.com/150" alt="Album Cover">
+            <p class="track-title">Lamha</p>
+            <p class="artist-name">Azaan Sami</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Playlist Section -->
+      <section class="playlist">
+        <h2>Your Playlists</h2>
+        <div class="playlist-list">
+          <div class="playlist-item">
+            <p>Chill Vibes</p>
+          </div>
+          <div class="playlist-item">
+            <p>Workout Hits</p>
+          </div>
+        </div>
+        <button class="create-playlist-btn">Create New Playlist</button>
+      </section>
+    </main>
+
+    <!-- Music Player Controls (Footer) -->
+    <footer>
+      <div class="current-track">
+        <img src="https://via.placeholder.com/60" alt="Album Cover">
+        <div class="track-details">
+          <div class="marquee">
+            <span class="current-track-title">Aal Izz Well - Shaan, Sonu Nigam, Swanand Kirkire</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="audio-controls">
+        <button id="prev" class="control-icon">⏮</button>
+        <button id="play-pause" class="control-icon">⏯</button>
+        <button id="next" class="control-icon">⏭</button>
+        <input type="range" id="progress-bar" value="0" max="100">
+        <button id="shuffle" class="control-icon">🔀</button>
+        <button id="repeat" class="control-icon">🔁</button>
+        <div class="volume-control">
+          <button id="volume-down" class="control-icon">🔉</button>
+          <input type="range" id="volume" value="50" max="100">
+          <button id="volume-up" class="control-icon">🔊</button>
+        </div>
+      </div>
+    </footer>
+
+    <script src="music.js"></script>
+  </div>
+</body>
+
+</html>
+
+
